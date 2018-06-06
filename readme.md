@@ -1,4 +1,4 @@
-# Module 03: Bootstrapping the Java EE Application
+# Maven Installation
 
 This module takes the installed tools to bootstrap an empty Java EE application and execute it.
 
@@ -27,7 +27,8 @@ Once [Wildfly](http://wildfly.org/) is installed, deploy the war file and go to 
 
 ## Demo 
 
-* To bootsrap the application use the following Maven archetype : `mvn -DarchetypeGroupId=org.codehaus.mojo.archetypes -DarchetypeArtifactId=webapp-javaee7 -DarchetypeVersion=1.1` -DgroupId=com.pluralsight.javaee-getting-started -DartifactId=bookstore-back -Dversion=1.0 -Darchetype.interactive=false --batch-mode -Dpackage=com.pluralsight.bookstore archetype:generate`
+* To bootsrap the application use the following Maven archetype : `mvn -DarchetypeGroupId=org.codehaus.mojo.archetypes -DarchetypeArtifactId=webapp-javaee7 -DarchetypeVersion=1.1 -DgroupId=com.pluralsight.javaee-getting-started -DartifactId=bookstore-back -Dversion=1.0 -Darchetype.interactive=false --batch-mode -Dpackage=com.pluralsight.bookstore archetype:generate`
+
 * In the `pom.xml` change Java 1.7 to 1.8
 * In the `pom.xml` add `bookstore-back` so we don't get a `bookstore-back-1.0` URL but just `bookstore-back`
 
